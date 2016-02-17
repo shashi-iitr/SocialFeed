@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85CED039E351D5486A8537A3 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84766FD98390F60D2412F699 /* Pods.framework */; };
 		9B7930E81C74F5F4006EFB15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7930E71C74F5F4006EFB15 /* main.m */; };
 		9B7930EB1C74F5F4006EFB15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7930EA1C74F5F4006EFB15 /* AppDelegate.m */; };
-		9B7930EE1C74F5F4006EFB15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7930ED1C74F5F4006EFB15 /* ViewController.m */; };
 		9B7930F11C74F5F4006EFB15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7930EF1C74F5F4006EFB15 /* Main.storyboard */; };
 		9B7930F31C74F5F4006EFB15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B7930F21C74F5F4006EFB15 /* Assets.xcassets */; };
 		9B7930F61C74F5F4006EFB15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B7930F41C74F5F4006EFB15 /* LaunchScreen.storyboard */; };
 		9B7931011C74F5F4006EFB15 /* SocialFeedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7931001C74F5F4006EFB15 /* SocialFeedTests.m */; };
 		9B79310C1C74F5F4006EFB15 /* SocialFeedUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B79310B1C74F5F4006EFB15 /* SocialFeedUITests.m */; };
+		9B79311B1C74F86B006EFB15 /* SocialFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B79311A1C74F86B006EFB15 /* SocialFeedTableViewController.m */; };
+		9B79311E1C74F882006EFB15 /* SocialFeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B79311D1C74F882006EFB15 /* SocialFeedDetailViewController.m */; };
+		9B7931221C74F8F5006EFB15 /* SocialFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7931201C74F8F5006EFB15 /* SocialFeedTableViewCell.m */; };
+		9B7931231C74F8F5006EFB15 /* SocialFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7931211C74F8F5006EFB15 /* SocialFeedTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5FE0C3239762534152337B3D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		84766FD98390F60D2412F699 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7930E31C74F5F4006EFB15 /* SocialFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B7930E71C74F5F4006EFB15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B7930E91C74F5F4006EFB15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B7930EA1C74F5F4006EFB15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9B7930EC1C74F5F4006EFB15 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9B7930ED1C74F5F4006EFB15 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9B7930F01C74F5F4006EFB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B7930F21C74F5F4006EFB15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B7930F51C74F5F4006EFB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +55,14 @@
 		9B7931071C74F5F4006EFB15 /* SocialFeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialFeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B79310B1C74F5F4006EFB15 /* SocialFeedUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialFeedUITests.m; sourceTree = "<group>"; };
 		9B79310D1C74F5F4006EFB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B7931191C74F86B006EFB15 /* SocialFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialFeedTableViewController.h; sourceTree = "<group>"; };
+		9B79311A1C74F86B006EFB15 /* SocialFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialFeedTableViewController.m; sourceTree = "<group>"; };
+		9B79311C1C74F882006EFB15 /* SocialFeedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialFeedDetailViewController.h; sourceTree = "<group>"; };
+		9B79311D1C74F882006EFB15 /* SocialFeedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialFeedDetailViewController.m; sourceTree = "<group>"; };
+		9B79311F1C74F8F5006EFB15 /* SocialFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialFeedTableViewCell.h; sourceTree = "<group>"; };
+		9B7931201C74F8F5006EFB15 /* SocialFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialFeedTableViewCell.m; sourceTree = "<group>"; };
+		9B7931211C74F8F5006EFB15 /* SocialFeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialFeedTableViewCell.xib; sourceTree = "<group>"; };
+		D16631649939655F7A183392 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85CED039E351D5486A8537A3 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +98,8 @@
 				9B7930FF1C74F5F4006EFB15 /* SocialFeedTests */,
 				9B79310A1C74F5F4006EFB15 /* SocialFeedUITests */,
 				9B7930E41C74F5F4006EFB15 /* Products */,
+				E99DFCDE264850F2ED6DF3B5 /* Pods */,
+				E1978001F0E89E16C343379E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,13 +118,18 @@
 			children = (
 				9B7930E91C74F5F4006EFB15 /* AppDelegate.h */,
 				9B7930EA1C74F5F4006EFB15 /* AppDelegate.m */,
-				9B7930EC1C74F5F4006EFB15 /* ViewController.h */,
-				9B7930ED1C74F5F4006EFB15 /* ViewController.m */,
 				9B7930EF1C74F5F4006EFB15 /* Main.storyboard */,
 				9B7930F21C74F5F4006EFB15 /* Assets.xcassets */,
 				9B7930F41C74F5F4006EFB15 /* LaunchScreen.storyboard */,
 				9B7930F71C74F5F4006EFB15 /* Info.plist */,
 				9B7930E61C74F5F4006EFB15 /* Supporting Files */,
+				9B7931191C74F86B006EFB15 /* SocialFeedTableViewController.h */,
+				9B79311A1C74F86B006EFB15 /* SocialFeedTableViewController.m */,
+				9B79311C1C74F882006EFB15 /* SocialFeedDetailViewController.h */,
+				9B79311D1C74F882006EFB15 /* SocialFeedDetailViewController.m */,
+				9B79311F1C74F8F5006EFB15 /* SocialFeedTableViewCell.h */,
+				9B7931201C74F8F5006EFB15 /* SocialFeedTableViewCell.m */,
+				9B7931211C74F8F5006EFB15 /* SocialFeedTableViewCell.xib */,
 			);
 			path = SocialFeed;
 			sourceTree = "<group>";
@@ -140,6 +160,23 @@
 			path = SocialFeedUITests;
 			sourceTree = "<group>";
 		};
+		E1978001F0E89E16C343379E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84766FD98390F60D2412F699 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E99DFCDE264850F2ED6DF3B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D16631649939655F7A183392 /* Pods.debug.xcconfig */,
+				5FE0C3239762534152337B3D /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +184,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B7931101C74F5F4006EFB15 /* Build configuration list for PBXNativeTarget "SocialFeed" */;
 			buildPhases = (
+				83286033F52D50C9678595BE /* Check Pods Manifest.lock */,
 				9B7930DF1C74F5F4006EFB15 /* Sources */,
 				9B7930E01C74F5F4006EFB15 /* Frameworks */,
 				9B7930E11C74F5F4006EFB15 /* Resources */,
+				322986F0244CE2D389072594 /* Embed Pods Frameworks */,
+				2A633DE528C32F3AB29C6EA1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,6 +285,7 @@
 			files = (
 				9B7930F61C74F5F4006EFB15 /* LaunchScreen.storyboard in Resources */,
 				9B7930F31C74F5F4006EFB15 /* Assets.xcassets in Resources */,
+				9B7931231C74F8F5006EFB15 /* SocialFeedTableViewCell.xib in Resources */,
 				9B7930F11C74F5F4006EFB15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,13 +306,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A633DE528C32F3AB29C6EA1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		322986F0244CE2D389072594 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83286033F52D50C9678595BE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B7930DF1C74F5F4006EFB15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B7930EE1C74F5F4006EFB15 /* ViewController.m in Sources */,
+				9B79311E1C74F882006EFB15 /* SocialFeedDetailViewController.m in Sources */,
+				9B79311B1C74F86B006EFB15 /* SocialFeedTableViewController.m in Sources */,
 				9B7930EB1C74F5F4006EFB15 /* AppDelegate.m in Sources */,
+				9B7931221C74F8F5006EFB15 /* SocialFeedTableViewCell.m in Sources */,
 				9B7930E81C74F5F4006EFB15 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +502,7 @@
 		};
 		9B7931111C74F5F4006EFB15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D16631649939655F7A183392 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SocialFeed/Info.plist;
@@ -422,6 +514,7 @@
 		};
 		9B7931121C74F5F4006EFB15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FE0C3239762534152337B3D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SocialFeed/Info.plist;
@@ -498,6 +591,7 @@
 				9B7931121C74F5F4006EFB15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B7931131C74F5F4006EFB15 /* Build configuration list for PBXNativeTarget "SocialFeedTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +600,7 @@
 				9B7931151C74F5F4006EFB15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B7931161C74F5F4006EFB15 /* Build configuration list for PBXNativeTarget "SocialFeedUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +609,7 @@
 				9B7931181C74F5F4006EFB15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

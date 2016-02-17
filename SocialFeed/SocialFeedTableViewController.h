@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SocialFeedTableViewController.h
 //  SocialFeed
 //
 //  Created by shashi kumar on 18/02/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface SocialFeedTableViewController : UITableViewController
 
 @end
-
