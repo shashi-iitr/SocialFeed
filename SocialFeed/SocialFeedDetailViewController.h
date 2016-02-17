@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SocialFeed.h"
 
 @interface SocialFeedDetailViewController : UIViewController
+
+- (void)setSocialFeed:(SocialFeed *)feed;
 
 @end

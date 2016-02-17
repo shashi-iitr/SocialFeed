@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SocialFeed.h"
 
 @interface SocialFeedTableViewCell : UITableViewCell
 
 + (NSString *)reusedIdentifier;
+
+- (void)configureWithFeed:(SocialFeed *)feed;
 
 @end

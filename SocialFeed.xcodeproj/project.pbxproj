@@ -19,6 +19,8 @@
 		9B79311E1C74F882006EFB15 /* SocialFeedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B79311D1C74F882006EFB15 /* SocialFeedDetailViewController.m */; };
 		9B7931221C74F8F5006EFB15 /* SocialFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7931201C74F8F5006EFB15 /* SocialFeedTableViewCell.m */; };
 		9B7931231C74F8F5006EFB15 /* SocialFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B7931211C74F8F5006EFB15 /* SocialFeedTableViewCell.xib */; };
+		9B7931251C750415006EFB15 /* feed.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B7931241C750415006EFB15 /* feed.json */; };
+		9B7931281C7504D4006EFB15 /* SocialFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B7931271C7504D4006EFB15 /* SocialFeed.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		9B79311F1C74F8F5006EFB15 /* SocialFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialFeedTableViewCell.h; sourceTree = "<group>"; };
 		9B7931201C74F8F5006EFB15 /* SocialFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialFeedTableViewCell.m; sourceTree = "<group>"; };
 		9B7931211C74F8F5006EFB15 /* SocialFeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocialFeedTableViewCell.xib; sourceTree = "<group>"; };
+		9B7931241C750415006EFB15 /* feed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = feed.json; sourceTree = "<group>"; };
+		9B7931261C7504D4006EFB15 /* SocialFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialFeed.h; sourceTree = "<group>"; };
+		9B7931271C7504D4006EFB15 /* SocialFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialFeed.m; sourceTree = "<group>"; };
 		D16631649939655F7A183392 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +121,7 @@
 		9B7930E51C74F5F4006EFB15 /* SocialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				9B7931241C750415006EFB15 /* feed.json */,
 				9B7930E91C74F5F4006EFB15 /* AppDelegate.h */,
 				9B7930EA1C74F5F4006EFB15 /* AppDelegate.m */,
 				9B7930EF1C74F5F4006EFB15 /* Main.storyboard */,
@@ -130,6 +136,8 @@
 				9B79311F1C74F8F5006EFB15 /* SocialFeedTableViewCell.h */,
 				9B7931201C74F8F5006EFB15 /* SocialFeedTableViewCell.m */,
 				9B7931211C74F8F5006EFB15 /* SocialFeedTableViewCell.xib */,
+				9B7931261C7504D4006EFB15 /* SocialFeed.h */,
+				9B7931271C7504D4006EFB15 /* SocialFeed.m */,
 			);
 			path = SocialFeed;
 			sourceTree = "<group>";
@@ -285,6 +293,7 @@
 			files = (
 				9B7930F61C74F5F4006EFB15 /* LaunchScreen.storyboard in Resources */,
 				9B7930F31C74F5F4006EFB15 /* Assets.xcassets in Resources */,
+				9B7931251C750415006EFB15 /* feed.json in Resources */,
 				9B7931231C74F8F5006EFB15 /* SocialFeedTableViewCell.xib in Resources */,
 				9B7930F11C74F5F4006EFB15 /* Main.storyboard in Resources */,
 			);
@@ -359,6 +368,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B7931281C7504D4006EFB15 /* SocialFeed.m in Sources */,
 				9B79311E1C74F882006EFB15 /* SocialFeedDetailViewController.m in Sources */,
 				9B79311B1C74F86B006EFB15 /* SocialFeedTableViewController.m in Sources */,
 				9B7930EB1C74F5F4006EFB15 /* AppDelegate.m in Sources */,

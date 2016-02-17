@@ -7,31 +7,71 @@
 //
 
 #import "SocialFeedDetailViewController.h"
+#import "UIImageView+AFNetworking.h"
 
-@interface SocialFeedDetailViewController ()
+@interface SocialFeedDetailViewController () <UIWebViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *authorNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *createdOnLabel;
+@property (weak, nonatomic) IBOutlet UIButton *followButton;
+@property (weak, nonatomic) IBOutlet UIImageView *authorImageView;
+@property (nonatomic, strong) SocialFeed *feed;
+@property (weak, nonatomic) IBOutlet UILabel *likeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *commentLabel;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+@property (weak, nonatomic) IBOutlet UILabel *feedTitleLabel;
 @end
 
 @implementation SocialFeedDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.webView.delegate = self;
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:[NSURL URLWithString:_feed.detailURL]];
+    [self.webView loadRequest:requestObj];
+
+}
+
+- (void)setSocialFeed:(SocialFeed *)feed {
+    _feed = feed;
+
+    self.authorNameLabel.text = feed.userName ? [feed.userName capitalizedString] : @"Anonymous";
+    self.feedTitleLabel.text = feed.title;
+    if (feed.type && [[feed.type lowercaseString] isEqualToString:@"story"]) {
+        self.createdOnLabel.text = feed.verb;
+        [self.authorImageView setImageWithURL:[NSURL URLWithString:feed.si] placeholderImage:[UIImage imageNamed:@"tutor_placeholder"]];
+        self.likeLabel.text = [NSString stringWithFormat:@"%ld likes", (long)feed.likeCount];
+        self.commentLabel.text = [NSString stringWithFormat:@"%ld comments", (long)feed.commentCount];
+
+    } else {
+        [self.authorImageView setImageWithURL:[NSURL URLWithString:feed.imageURL] placeholderImage:[UIImage imageNamed:@"tutor_placeholder"]];
+        self.likeLabel.text = [NSString stringWithFormat:@"%ld followers", (long)feed.followers];
+        self.commentLabel.text = [NSString stringWithFormat:@"%ld followings", (long)feed.following];
+    }
+    
+    
+}
+- (IBAction)didTapFollowButton:(UIButton *)sender {
+}
+
+#pragma mark - UIWebViewDelegate
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    return YES;
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView {
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+    NSLog(@"err %@", error.debugDescription);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
